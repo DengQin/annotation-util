@@ -17,7 +17,8 @@ public class JustTest2 {
 		entry = StringUtils.replace(entry, "eh", replaceValue);
 		System.out.println(entry);
 
-		System.out.println(DateFormatUtils.format(new Date(),"yyyy-MM-dd HH:mm:ss"));
+		System.out.println(DateFormatUtils.format(new Date(), "yyyy-MM-dd HH:mm:ss"));
 		System.out.println("时间：" + DateUtils.getFragmentInMinutes(new Date(), Calendar.DAY_OF_YEAR));
+		System.out.println("小时：" + DateUtils.getFragmentInHours(new Date(), Calendar.DATE));
 	}
 }
